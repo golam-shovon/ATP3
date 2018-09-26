@@ -1,0 +1,69 @@
+<!DOCTYPE HTMl>
+	<html>
+		<head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="jquery-ui.css">
+			<link rel="stylesheet" href="jquery-ui.structure.css">
+			<script src="jquery-ui.js"></script>
+			<script>
+  $( function() {
+    var bloodgroup= [
+      "A+",
+      "B+",
+      "A-",
+      "AB+",
+      "AB-",
+      "O+",
+      "O-"
+    ];
+    $( "#bg" ).autocomplete({
+      source: bloodgroup
+    });
+  } );
+  </script>
+		</head>
+		<body>
+			
+			<form>	
+				<table >
+					
+					
+					<tr>
+						<td>Name</td>
+						<td><input type="text" name="name" id="name"></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td colspan="2"><input style="width:347px;" type="text" name="Em" id="em"></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td colspan="2">
+									<input type="radio" name="gender" value="male" id="g" > Male
+									<input type="radio" name="gender" value="female" id="g"> Female
+									<input type="radio" name="gender" value="other" id="g"> Other
+						</td>
+					</tr>
+					<tr>
+						<td>Date Of Birth</td>
+						<td colspan="2"><input type="text" name="date" id="da">/<input type="text" name="month" id="mon">/<input type="text" name="year" id="ye">(dd/mm/yyyy)</td>
+					</tr>
+					
+					<tr>
+						<td>Blood Group</td>
+						<td> <input type="text" name="name" id="bg"></td>
+						
+					</tr>
+					<tr>
+						<td>Degree</td>
+						<td>
+							<input type="checkbox" name="degree" value="SSC" id="deg">SSC
+							<input type="checkbox" name="degree" value="HSC" id="deg">HSC
+							<input type="checkbox" name="degree" value="BSc."id="deg">BSc.
+							<input type="checkbox" name="degree" value="MSc."id="deg">MSc.
+						</td>
+					</tr>
+				</table
+			</form>
+		</body>
+	</html>	
